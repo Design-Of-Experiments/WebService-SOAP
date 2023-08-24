@@ -15,14 +15,16 @@ Public Class WebService2
 
       Select Case UCase(Trim(strmoneda))
          Case "DO"
-             'dolar
-            Return "30"
-         "RE"
-                'real
-                Return "9.9"
+                'dolar
+                Return "30"
+         Case "RE"
+             'real
+             Return "9.9"
          Case "EU"
-            'Euro
-            Return "33"
+             'Euro
+             Return "33"
+         Case Else
+             Return "Moneda no válida"
         End Select
         
    End Function
