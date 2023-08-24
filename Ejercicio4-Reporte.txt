@@ -1,0 +1,38 @@
+Resultado de testeo:
+Código: CS1002
+Error: public String dameCita() 
+Descripción: Se esperaba ‘;’
+Razón: Se indica un error de sintaxis en la línea 29 
+Código: CS1519
+Error: return (citas[numCita]);
+Descripción: El token ‘return’ no es válido en una clase, un registro, una estructura o una declaración de miembro de interfaz
+Razón: Se utilizó la palabra clave ‘return’ en un contexto no válido para el lenguaje de programación.
+Código: CS8025
+Error: return (citas[numCita]);
+Descripción: Las características ‘tuplas’ no está disponible en C# 4.
+Razón: Dicha característica se encuentra disponible en versiones más recientes de C#
+Código: CS8124
+Error: return (citas[numCita]);
+Descripción: Una tupla debe contener al menos dos elementos
+Razón: No se está usando la tupla con dos elementos obligatorios.
+Código: CS1519
+Error: return (citas[numCita]);
+Razón: Descripción: El token ‘;’’ no es válido en una clase, un registro, una estructura o una declaración de miembro de interfaz
+Se utilizó ‘;’ en un contexto no válido para el lenguaje de programación.
+Código: CS0501
+Error: public String dameCita()
+Descripción: Un inicializador de campo no puede hacer referencia al campo, método o propiedad no estáticos ‘ServCitas.random’
+Razón: Intento de inicializar un campo utilizando un valor que depende de otro campo, método o propiedad no estáticos en el mismo objeto.
+Código: CS0236
+Error: int numCita = random.Next(0,3);
+Descripción: ‘ServCitas.dameCita()’ debe declarar un cuerpo porque no se marcó como abstracto, externo o parcial.
+Razón: No se marcó como abstracto, externo o parcial" es porque falta abrir una llave { después de la declaración del método dameCita().
+
+Veredicto:
+El código debe retornar al área del desarrollo. Ya que presenta errores severos que no permiten ingresar a la aplicación web.
+
+Recomendaciones:
+El error es causado por la falta de una llave de apertura { en la declaración del método dameCita(). Para una posible solución, se deben agregar las llaves en la línea adecuada. se puede corregir el código de la siguiente manera:
+Reemplazar las siguientes líneas, por lo siguiente:
+Linea 29: public String dameCita() {
+Línea 38: Agregar llave “}”
