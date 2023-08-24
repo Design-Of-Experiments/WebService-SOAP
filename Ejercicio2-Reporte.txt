@@ -1,0 +1,13 @@
+Resultado de testeo:
+Codigo: BC30035
+Error: "RE" - Línea 20
+Descripción: Error de sintaxis
+Razón: Se ha cometido un error al momento de la escritura del código
+
+Veredicto:
+Al llevar a cabo la evaluación del código, se identificó un error de sintaxis en el código. Es sumamente necesario corregir para que el web service pueda devolver los datos exitosamente. Por tal motivo, el código no puede pasar a producción y necesita la corrección por parte del equipo de desarrollo.
+
+Recomendaciones:
+El error se debía a que la cadena de texto "RE" no se encontraba dentro de una instrucción válida en el lenguaje de programación Visual Basic. Para una posible solución, se puede corregir el código de la siguiente manera:
+Reemplazar la línea 20, por lo siguiente:
+Case "RE"
